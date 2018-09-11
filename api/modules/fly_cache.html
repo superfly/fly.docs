@@ -72,6 +72,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#del" class="tsd-kind-icon">del</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#expire" class="tsd-kind-icon">expire</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#getmulti" class="tsd-kind-icon">get<wbr>Multi</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#getmultistring" class="tsd-kind-icon">get<wbr>Multi<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#getstring" class="tsd-kind-icon">get<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#purgetag" class="tsd-kind-icon">purge<wbr>Tag</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly_cache.html#set" class="tsd-kind-icon">set</a></li>
@@ -93,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L152">fly/cache/index.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L182">fly/cache/index.ts:182</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -125,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L94">fly/cache/index.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L124">fly/cache/index.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,7 +165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L34">fly/cache/index.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L34">fly/cache/index.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,6 +188,70 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getmulti" class="tsd-anchor"></a>
+					<h3>get<wbr>Multi</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Multi<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L71">fly/cache/index.ts:71</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get multiple values from the cache.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>keys: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>list of keys to retrieve</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ArrayBuffer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>List of results in the same order as the provided keys</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getmultistring" class="tsd-anchor"></a>
+					<h3>get<wbr>Multi<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Multi<wbr>String<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L91">fly/cache/index.ts:91</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get multiple string values from the cache</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>keys: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>list of keys to retrieve</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>list of results in the same order as the provided keys</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="getstring" class="tsd-anchor"></a>
 					<h3>get<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -195,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L56">fly/cache/index.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L56">fly/cache/index.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L128">fly/cache/index.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L158">fly/cache/index.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -258,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L73">fly/cache/index.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L103">fly/cache/index.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -299,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.40.0/v8env/src/fly/cache/index.ts#L112">fly/cache/index.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/index.ts#L142">fly/cache/index.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,6 +455,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="fly_cache.html#get" class="tsd-kind-icon">get</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="fly_cache.html#getmulti" class="tsd-kind-icon">get<wbr>Multi</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="fly_cache.html#getmultistring" class="tsd-kind-icon">get<wbr>Multi<wbr>String</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="fly_cache.html#getstring" class="tsd-kind-icon">get<wbr>String</a>
