@@ -1,0 +1,1632 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@fly/v8env documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@fly/v8env documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#_log" title="src/logger.ts"><b>_log</b>&nbsp;&nbsp;&nbsp;(src/.../logger.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/events.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../events.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fly/streams.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../streams.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/timers.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../timers.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fly/data.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../data.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/crypto.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../crypto.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fly/cache/global.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../global.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fetch.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../fetch.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/error.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../error.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fly/log.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../log.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/fly/cache/index.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#bridge" title="src/text-encoding.ts"><b>bridge</b>&nbsp;&nbsp;&nbsp;(src/.../text-encoding.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#cache" title="src/cache.ts"><b>cache</b>&nbsp;&nbsp;&nbsp;(src/.../cache.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#cache" title="src/fly/cache/index.ts"><b>cache</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#console" title="src/console.ts"><b>console</b>&nbsp;&nbsp;&nbsp;(src/.../console.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#cookieAttributeNames" title="src/cookie_jar.ts"><b>cookieAttributeNames</b>&nbsp;&nbsp;&nbsp;(src/.../cookie_jar.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#crypto" title="src/crypto.ts"><b>crypto</b>&nbsp;&nbsp;&nbsp;(src/.../crypto.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#data" title="src/fly/data.ts"><b>data</b>&nbsp;&nbsp;&nbsp;(src/.../data.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#DEFAULT_BRIDGE_TRANSFER_OPTIONS" title="src/bridge.ts"><b>DEFAULT_BRIDGE_TRANSFER_OPTIONS</b>&nbsp;&nbsp;&nbsp;(src/.../bridge.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#defaultSkipHeaders" title="src/fly/cache/response.ts"><b>defaultSkipHeaders</b>&nbsp;&nbsp;&nbsp;(src/.../response.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#emitter" title="src/events.ts"><b>emitter</b>&nbsp;&nbsp;&nbsp;(src/.../events.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#errMiddlewareNotPromise" title="src/middleware.ts"><b>errMiddlewareNotPromise</b>&nbsp;&nbsp;&nbsp;(src/.../middleware.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fetchEventBound" title="src/fly/http.ts"><b>fetchEventBound</b>&nbsp;&nbsp;&nbsp;(src/.../http.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fly" title="src/cache.ts"><b>fly</b>&nbsp;&nbsp;&nbsp;(src/.../cache.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fly" title="src/fly/http.ts"><b>fly</b>&nbsp;&nbsp;&nbsp;(src/.../http.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#fly" title="src/console.ts"><b>fly</b>&nbsp;&nbsp;&nbsp;(src/.../console.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#flyFetchHandler" title="src/fly/http.ts"><b>flyFetchHandler</b>&nbsp;&nbsp;&nbsp;(src/.../http.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#interfaces" title="src/streams.ts"><b>interfaces</b>&nbsp;&nbsp;&nbsp;(src/.../streams.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#invalidResponseType" title="src/events.ts"><b>invalidResponseType</b>&nbsp;&nbsp;&nbsp;(src/.../events.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#logger" title="src/logger.ts"><b>logger</b>&nbsp;&nbsp;&nbsp;(src/.../logger.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#middleware" title="src/middleware.ts"><b>middleware</b>&nbsp;&nbsp;&nbsp;(src/.../middleware.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#" title="src/streams.ts"><b></b>&nbsp;&nbsp;&nbsp;(src/.../streams.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#mimeTypes" title="src/fly/static.ts"><b>mimeTypes</b>&nbsp;&nbsp;&nbsp;(src/.../static.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#ReadableStream" title="src/body_mixin.ts"><b>ReadableStream</b>&nbsp;&nbsp;&nbsp;(src/.../body_mixin.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#WritableParser" title="src/document.ts"><b>WritableParser</b>&nbsp;&nbsp;&nbsp;(src/.../document.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/logger.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_log"></a>
+                        <span class="name">
+                            <b>
+                            _log
+                            </b>
+                            <a href="#_log"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>_log:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="logger"></a>
+                        <span class="name">
+                            <b>
+                            logger
+                            </b>
+                            <a href="#logger"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>logger:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  info(fmt: any, ...params: any[]) {
+    flyLog(&quot;info&quot;, format(fmt, ...params))
+  },
+  warn(fmt: any, ...params: any[]) {
+    flyLog(&quot;warn&quot;, format(fmt, ...params))
+  },
+  error(fmt: any, ...params: any[]) {
+    flyLog(&quot;error&quot;, format(fmt, ...params))
+  },
+  debug(fmt: any, ...params: any[]) {
+    flyLog(&quot;debug&quot;, format(fmt, ...params))
+  }
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/events.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="emitter"></a>
+                        <span class="name">
+                            <b>
+                            emitter
+                            </b>
+                            <a href="#emitter"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>emitter:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new EventEmitter()</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="invalidResponseType"></a>
+                        <span class="name">
+                            <b>
+                            invalidResponseType
+                            </b>
+                            <a href="#invalidResponseType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>invalidResponseType:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Error(
+  &#x60;Invalid response type for &#x27;fetch&#x27; event. Expecting a straight Response, a function returning a Promise&lt;Response&gt; or a Response.&#x60;
+)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/streams.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/timers.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/data.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Persistent, global key/value data store. Open collections, write data with <code>put</code>. Then retrieve data with <code>get</code>.</p>
+<p>Keys and values are stored in range chunks. Chunks migrate to the region they&#39;re most frequently accessed from.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                            data
+                            </b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>data:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  collection(name: string) {
+    return new Collection(name)
+  },
+  dropCollection(name: string) {
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      bridge.dispatch(&quot;fly.Data.dropCollection&quot;, name, (err: string | null, ok: boolean) &#x3D;&gt; {
+        if (err) {
+          reject(new Error(err))
+          return
+        }
+        resolve(ok)
+      })
+    })
+  }
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/crypto.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="crypto"></a>
+                        <span class="name">
+                            <b>
+                            crypto
+                            </b>
+                            <a href="#crypto"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>crypto:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  subtle: {
+    digest(algo: string, data: CryptoData, encoding?: string): Promise&lt;ArrayBuffer | string&gt; {
+      return bridge.dispatch(&quot;digestHash&quot;, algo, data, encoding)
+    },
+    digestSync(algo: string, data: CryptoData, encoding?: string): ArrayBuffer | string {
+      return bridge.dispatchSync(&quot;digestHashAsync&quot;, algo, data, encoding)
+    }
+  },
+  getRandomValues(typedArray: Uint8Array): void {
+    if (!(typedArray instanceof Uint8Array)) {
+      throw new Error(&quot;Only Uint8Array are supported at present&quot;)
+    }
+    const newArr &#x3D; new Uint8Array(bridge.dispatchSync(&quot;getRandomValues&quot;, typedArray.length))
+    typedArray.set(newArr)
+    return
+  }
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/cache/global.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The Fly global cache API, allows eventually consistent modifications to all caches in all regions.</p>
+<div><pre class="line-numbers"><code class="language-javascript"> * import cache from &quot;&#64;fly/cache&quot;
+ *
+ * // notify all caches to delete a key
+ * await cache.global.del(&quot;key-to-delete&quot;)
+ *
+ * // notify all caches to purge a tag
+ * await cache.global.purgeTag(&quot;key-to-purge&quot;)
+ *</code></pre></div></div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fetch.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/error.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/log.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/cache/index.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>An API for accessing a regional, volatile cache. Data stored in <code>@fly/cache</code> can have an associated per-key time to live (TTL), and we will evict key data automatically after the elapsed TTL. We will also evict unused data when we need to reclaim space.</p>
+<div><pre class="line-numbers"><code class="language-javascript"> * import cache from &quot;&#64;fly/cache&quot;
+ *
+ * await cache.set(&quot;test-key&quot;, &quot;test-value&quot;)
+ *
+ * const s = await cache.getString(&quot;test-key&quot;)
+ *</code></pre></div><p>See <a href="fly/cache/response">fly/cache/response</a> for caching HTTP Response objects.</p>
+<p>See <a href="fly/cache/global">fly/cache/global</a> for global cache del/purge</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cache"></a>
+                        <span class="name">
+                            <b>
+                            cache
+                            </b>
+                            <a href="#cache"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cache:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  get,
+  getString,
+  getMulti,
+  getMultiString,
+  set,
+  expire,
+  del,
+  setTags,
+  purgeTag,
+  global
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/text-encoding.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bridge"></a>
+                        <span class="name">
+                            <b>
+                            bridge
+                            </b>
+                            <a href="#bridge"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>bridge:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/cache.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cache"></a>
+                        <span class="name">
+                            <b>
+                            cache
+                            </b>
+                            <a href="#cache"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cache:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fly"></a>
+                        <span class="name">
+                            <b>
+                            fly
+                            </b>
+                            <a href="#fly"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>fly:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/console.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="console"></a>
+                        <span class="name">
+                            <b>
+                            console
+                            </b>
+                            <a href="#console"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>console:     <code>Console</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Console</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  // TODO: adding junk to conform to merged Console interface from node &amp; lib.dom
+  memory: undefined,
+  markTimeline: undefined,
+  msIsIndependentlyComposed: undefined,
+  select: undefined,
+  timeStamp: undefined,
+  timeline: undefined,
+  timelineEnd: undefined,
+  Console: undefined,
+
+  log(...args) {
+    fly.log(&quot;info&quot;, ...args)
+  },
+  info(...args) {
+    fly.log(&quot;info&quot;, ...args)
+  },
+  assert(assertion, ...args) {
+    if (!assertion) { fly.log(&quot;info&quot;, ...args) }
+  },
+  error(...args) {
+    fly.log(&quot;error&quot;, ...args)
+  },
+  exception(...args) {
+    fly.log(&quot;error&quot;, ...args)
+  },
+  warn(...args) {
+    fly.log(&quot;warn&quot;, ...args)
+  },
+  trace() {
+    const stack &#x3D; new Error().stack.match(/[^\r\n]+/g)
+    fly.log(&quot;info&quot;, &quot;Trace:\n&quot; + stack.slice(2).join(&quot;\n&quot;))
+  },
+
+  // off-spec
+  debug(...args) {
+    fly.log(&quot;debug&quot;, ...args)
+  },
+
+  // unimplemented
+  clear: noop,
+  count: noop,
+  countReset: noop,
+  dir: noop,
+  dirxml: noop,
+  group: noop,
+  groupCollapsed: noop,
+  groupEnd: noop,
+  // TODO: commenting out to resolve definition conflict between @types/node &amp; lib.dom
+  //  see: https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/node/v4/index.d.ts#L15
+  //  note: &#x27;timestamp&#x27; here &amp; &#x27;timeStamp&#x27; above...
+  // timestamp: noop,
+
+  // TODO: Implement
+  profile: noop,
+  profileEnd: noop,
+  table: noop,
+  time: noop,
+  timeEnd: noop
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fly"></a>
+                        <span class="name">
+                            <b>
+                            fly
+                            </b>
+                            <a href="#fly"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>fly:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/cookie_jar.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cookieAttributeNames"></a>
+                        <span class="name">
+                            <b>
+                            cookieAttributeNames
+                            </b>
+                            <a href="#cookieAttributeNames"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>cookieAttributeNames:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+  &quot;Max-Age&quot;,
+  &quot;Expires&quot;,
+  &quot;HttpOnly&quot;,
+  &quot;Secure&quot;,
+  &quot;Path&quot;,
+  &quot;SameSite&quot;,
+  &quot;Domain&quot;
+]</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/bridge.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="DEFAULT_BRIDGE_TRANSFER_OPTIONS"></a>
+                        <span class="name">
+                            <b>
+                            DEFAULT_BRIDGE_TRANSFER_OPTIONS
+                            </b>
+                            <a href="#DEFAULT_BRIDGE_TRANSFER_OPTIONS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>DEFAULT_BRIDGE_TRANSFER_OPTIONS:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  release: true,
+  transfer: false
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/cache/response.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultSkipHeaders"></a>
+                        <span class="name">
+                            <b>
+                            defaultSkipHeaders
+                            </b>
+                            <a href="#defaultSkipHeaders"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>defaultSkipHeaders:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&quot;authorization&quot;, &quot;set-cookie&quot;]</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/middleware.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errMiddlewareNotPromise"></a>
+                        <span class="name">
+                            <b>
+                            errMiddlewareNotPromise
+                            </b>
+                            <a href="#errMiddlewareNotPromise"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>errMiddlewareNotPromise:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Error(&quot;Middleware did not return a promise&quot;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="middleware"></a>
+                        <span class="name">
+                            <b>
+                            middleware
+                            </b>
+                            <a href="#middleware"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>middleware:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/http.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fetchEventBound"></a>
+                        <span class="name">
+                            <b>
+                            fetchEventBound
+                            </b>
+                            <a href="#fetchEventBound"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>fetchEventBound:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fly"></a>
+                        <span class="name">
+                            <b>
+                            fly
+                            </b>
+                            <a href="#fly"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>fly:     <code></code>
+</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Fly API for working with HTTP requests.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="flyFetchHandler"></a>
+                        <span class="name">
+                            <b>
+                            flyFetchHandler
+                            </b>
+                            <a href="#flyFetchHandler"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>flyFetchHandler:     <code>null</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>null</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/streams.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interfaces"></a>
+                        <span class="name">
+                            <b>
+                            interfaces
+                            </b>
+                            <a href="#interfaces"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>interfaces:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  ReadableStream,
+  WritableStream,
+  ByteLengthQueuingStrategy,
+  CountQueuingStrategy,
+  TransformStream
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name=""></a>
+                        <span class="name">
+                            <b>
+                            
+                            </b>
+                            <a href="#"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>require(&quot;whatwg-streams/reference-implementation/lib/readable-stream&quot;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/fly/static.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mimeTypes"></a>
+                        <span class="name">
+                            <b>
+                            mimeTypes
+                            </b>
+                            <a href="#mimeTypes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>mimeTypes:     <code>literal type</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  html: &quot;text/html&quot;,
+  htm: &quot;text/html&quot;,
+  shtml: &quot;text/html&quot;,
+  css: &quot;text/css&quot;,
+  xml: &quot;text/xml&quot;,
+  gif: &quot;image/gif&quot;,
+  jpeg: &quot;image/jpeg&quot;,
+  jpg: &quot;image/jpeg&quot;,
+  js: &quot;application/javascript&quot;,
+  atom: &quot;application/atom+xml&quot;,
+  rss: &quot;application/rss+xml&quot;,
+  mml: &quot;text/mathml&quot;,
+  txt: &quot;text/plain&quot;,
+  jad: &quot;text/vnd.sun.j2me.app-descriptor&quot;,
+  wml: &quot;text/vnd.wap.wml&quot;,
+  htc: &quot;text/x-component&quot;,
+  png: &quot;image/png&quot;,
+  svg: &quot;image/svg+xml&quot;,
+  svgz: &quot;image/svg+xml&quot;,
+  tif: &quot;image/tiff&quot;,
+  tiff: &quot;image/tiff&quot;,
+  wbmp: &quot;image/vnd.wap.wbmp&quot;,
+  webp: &quot;image/webp&quot;,
+  ico: &quot;image/x-icon&quot;,
+  jng: &quot;image/x-jng&quot;,
+  bmp: &quot;image/x-ms-bmp&quot;,
+  woff: &quot;font/woff&quot;,
+  woff2: &quot;font/woff2&quot;,
+  jar: &quot;application/java-archive&quot;,
+  war: &quot;application/java-archive&quot;,
+  ear: &quot;application/java-archive&quot;,
+  json: &quot;application/json&quot;,
+  hqx: &quot;application/mac-binhex40&quot;,
+  doc: &quot;application/msword&quot;,
+  pdf: &quot;application/pdf&quot;,
+  ps: &quot;application/postscript&quot;,
+  eps: &quot;application/postscript&quot;,
+  ai: &quot;application/postscript&quot;,
+  rtf: &quot;application/rtf&quot;,
+  m3u8: &quot;application/vnd.apple.mpegurl&quot;,
+  kml: &quot;application/vnd.google-earth.kml+xml&quot;,
+  kmz: &quot;application/vnd.google-earth.kmz&quot;,
+  xls: &quot;application/vnd.ms-excel&quot;,
+  eot: &quot;application/vnd.ms-fontobject&quot;,
+  ppt: &quot;application/vnd.ms-powerpoint&quot;,
+  odg: &quot;application/vnd.oasis.opendocument.graphics&quot;,
+  odp: &quot;application/vnd.oasis.opendocument.presentation&quot;,
+  ods: &quot;application/vnd.oasis.opendocument.spreadsheet&quot;,
+  odt: &quot;application/vnd.oasis.opendocument.text&quot;,
+  pptx: &quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;,
+  xlsx: &quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;,
+  docx: &quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;,
+  wmlc: &quot;application/vnd.wap.wmlc&quot;,
+  &quot;7z&quot;: &quot;application/x-7z-compressed&quot;,
+  cco: &quot;application/x-cocoa&quot;,
+  jardiff: &quot;application/x-java-archive-diff&quot;,
+  jnlp: &quot;application/x-java-jnlp-file&quot;,
+  run: &quot;application/x-makeself&quot;,
+  pl: &quot;application/x-perl&quot;,
+  pm: &quot;application/x-perl&quot;,
+  prc: &quot;application/x-pilot&quot;,
+  pdb: &quot;application/x-pilot&quot;,
+  rar: &quot;application/x-rar-compressed&quot;,
+  rpm: &quot;application/x-redhat-package-manager&quot;,
+  sea: &quot;application/x-sea&quot;,
+  swf: &quot;application/x-shockwave-flash&quot;,
+  sit: &quot;application/x-stuffit&quot;,
+  tcl: &quot;application/x-tcl&quot;,
+  tk: &quot;application/x-tcl&quot;,
+  der: &quot;application/x-x509-ca-cert&quot;,
+  pem: &quot;application/x-x509-ca-cert&quot;,
+  crt: &quot;application/x-x509-ca-cert&quot;,
+  xpi: &quot;application/x-xpinstall&quot;,
+  xhtml: &quot;application/xhtml+xml&quot;,
+  xspf: &quot;application/xspf+xml&quot;,
+  zip: &quot;application/zip&quot;,
+  bin: &quot;application/octet-stream&quot;,
+  exe: &quot;application/octet-stream&quot;,
+  dll: &quot;application/octet-stream&quot;,
+  deb: &quot;application/octet-stream&quot;,
+  dmg: &quot;application/octet-stream&quot;,
+  iso: &quot;application/octet-stream&quot;,
+  img: &quot;application/octet-stream&quot;,
+  msi: &quot;application/octet-stream&quot;,
+  msp: &quot;application/octet-stream&quot;,
+  msm: &quot;application/octet-stream&quot;,
+  mid: &quot;audio/midi&quot;,
+  midi: &quot;audio/midi&quot;,
+  kar: &quot;audio/midi&quot;,
+  mp3: &quot;audio/mpeg&quot;,
+  ogg: &quot;audio/ogg&quot;,
+  m4a: &quot;audio/x-m4a&quot;,
+  ra: &quot;audio/x-realaudio&quot;,
+  &quot;3gpp&quot;: &quot;video/3gpp&quot;,
+  &quot;3gp&quot;: &quot;video/3gpp&quot;,
+  ts: &quot;video/mp2t&quot;,
+  mp4: &quot;video/mp4&quot;,
+  mpeg: &quot;video/mpeg&quot;,
+  mpg: &quot;video/mpeg&quot;,
+  mov: &quot;video/quicktime&quot;,
+  webm: &quot;video/webm&quot;,
+  flv: &quot;video/x-flv&quot;,
+  m4v: &quot;video/x-m4v&quot;,
+  mng: &quot;video/x-mng&quot;,
+  asx: &quot;video/x-ms-asf&quot;,
+  asf: &quot;video/x-ms-asf&quot;,
+  wmv: &quot;video/x-ms-wmv&quot;,
+  avi: &quot;video/x-msvideo&quot;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/body_mixin.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ReadableStream"></a>
+                        <span class="name">
+                            <b>
+                            ReadableStream
+                            </b>
+                            <a href="#ReadableStream"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>ReadableStream:     <code>literal type</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/document.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="WritableParser"></a>
+                        <span class="name">
+                            <b>
+                            WritableParser
+                            </b>
+                            <a href="#WritableParser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>WritableParser:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>htmlparser.WritableStream</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
