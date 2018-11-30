@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>fly/cache/response | @fly/fly</title>
+	<title>fly/cache/response | @fly/v8env</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,25 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@fly/fly</a>
+					<a href="../index.html" class="title">@fly/v8env</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -30,6 +48,9 @@
 	<div class="tsd-page-title">
 		<div class="container">
 			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
 				<li>
 					<a href="fly_cache_response.html">fly/cache/response</a>
 				</li>
@@ -47,15 +68,14 @@
 						<p>An API for efficiently caching Response objects in the regional Fly cache.</p>
 					</div>
 					<p>Usage:</p>
-					<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { responseCache } <span class="hljs-keyword">from</span> <span class="hljs-string">"@fly/cache"</span>
+					<pre><code class="language-javascript"><span class="hljs-keyword">import</span> { responseCache } <span class="hljs-keyword">from</span> <span class="hljs-string">"@fly/cache"</span>
 
 <span class="hljs-keyword">const</span> resp = <span class="hljs-keyword">await</span> fetch(<span class="hljs-string">"http://example.com"</span>)
 
 <span class="hljs-comment">// cache for an hour</span>
 <span class="hljs-keyword">await</span> responseCache.set(<span class="hljs-string">"example-com"</span>, resp, <span class="hljs-number">3600</span>)
 
-<span class="hljs-keyword">const</span> cachedResponse = <span class="hljs-keyword">await</span> responseCache.get(<span class="hljs-string">"example-com"</span>)
-</code></pre>
+<span class="hljs-keyword">const</span> cachedResponse = <span class="hljs-keyword">await</span> responseCache.get(<span class="hljs-string">"example-com"</span>)</code></pre>
 					<p>See <a href="fly_cache.html">fly/cache</a> for caching lower level types.</p>
 				</div>
 			</section>
@@ -100,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">Cached<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L43">fly/cache/response.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L43">fly/cache/response.ts:43</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L193">fly/cache/response.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L184">fly/cache/response.ts:184</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +173,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L169">fly/cache/response.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L166">fly/cache/response.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -190,7 +210,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L52">fly/cache/response.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L52">fly/cache/response.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -222,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L76">fly/cache/response.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L73">fly/cache/response.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +273,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L108">fly/cache/response.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L104">fly/cache/response.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L93">fly/cache/response.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L92">fly/cache/response.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -333,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L182">fly/cache/response.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L176">fly/cache/response.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/fly/cache/response.ts#L157">fly/cache/response.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/fly/cache/response.ts#L152">fly/cache/response.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +418,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Libraries</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="fetch.html">fetch</a>

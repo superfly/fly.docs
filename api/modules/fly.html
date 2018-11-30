@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>fly | @fly/fly</title>
+	<title>fly | @fly/v8env</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,25 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">@fly/fly</a>
+					<a href="../index.html" class="title">@fly/v8env</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -30,6 +48,9 @@
 	<div class="tsd-page-title">
 		<div class="container">
 			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
 				<li>
 					<a href="fly.html">fly</a>
 				</li>
@@ -41,35 +62,23 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Fly specific APIs and functionality
-						Modules are available via the <code>fly</code> Global variable.</p>
-					</div>
-					<p>The runtime includes an implementation of the <a href="fetch.html"><code>fetch</code></a> spec
-					for making HTTP requests.</p>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>External modules</h3>
+							<h3>Modules</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-external-module tsd-parent-kind-external-module"><a href="fly.cache.html" class="tsd-kind-icon">cache</a></li>
-								<li class="tsd-kind-external-module tsd-parent-kind-external-module"><a href="fly.http.html" class="tsd-kind-icon">http</a></li>
-								<li class="tsd-kind-external-module tsd-parent-kind-external-module"><a href="fly.log.html" class="tsd-kind-icon">log</a></li>
+								<li class="tsd-kind-module tsd-parent-kind-external-module"><a href="fly.fly-1.html" class="tsd-kind-icon">fly</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.bodymixin.html" class="tsd-kind-icon">Body<wbr>Mixin</a></li>
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.cookiejar.html" class="tsd-kind-icon">Cookie<wbr>Jar</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.document.html" class="tsd-kind-icon">Document</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.element.html" class="tsd-kind-icon">Element</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.flyheaders.html" class="tsd-kind-icon">Fly<wbr>Headers</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.node.html" class="tsd-kind-icon">Node</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.textdecoder.html" class="tsd-kind-icon">Text<wbr>Decoder</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/fly.textencoder.html" class="tsd-kind-icon">Text<wbr>Encoder</a></li>
@@ -89,12 +98,6 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="fly.html#writablestream" class="tsd-kind-icon">Writable<wbr>Stream</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="fly.html#headers" class="tsd-kind-icon">Headers</a></li>
-							</ul>
-						</section>
 					</div>
 				</section>
 			</section>
@@ -103,10 +106,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="bodysource" class="tsd-anchor"></a>
 					<h3>Body<wbr>Source</h3>
-					<div class="tsd-signature tsd-kind-icon">Body<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BufferSource</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URLSearchParams</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadableStream</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">String</span></div>
+					<div class="tsd-signature tsd-kind-icon">Body<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BufferSource</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">FormData</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">URLSearchParams</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadableStream</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/body_mixin.ts#L17">body_mixin.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/body_mixin.ts#L15">body_mixin.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Readable<wbr>Stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/streams.ts#L10">streams.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/streams.ts#L11">streams.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">Transform<wbr>Stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/streams.ts#L14">streams.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/streams.ts#L15">streams.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,41 +142,9 @@
 					<div class="tsd-signature tsd-kind-icon">Writable<wbr>Stream<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/streams.ts#L11">streams.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.44.2/packages/v8env/src/streams.ts#L12">streams.ts:12</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="headers" class="tsd-anchor"></a>
-					<h3>Headers</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">Headers<span class="tsd-signature-symbol">(</span>init<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/superfly/fly/blob/v0.41.0/v8env/src/headers.ts#L11">headers.ts:11</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>class</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>init: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -181,7 +152,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Libraries</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="fetch.html">fetch</a>
@@ -189,17 +160,8 @@
 					<li class="current tsd-kind-external-module tsd-is-private">
 						<a href="fly.html">fly</a>
 						<ul>
-							<li class=" tsd-kind-external-module tsd-parent-kind-external-module">
-								<a href="fly.cache.html">cache</a>
-							</li>
-							<li class=" tsd-kind-external-module tsd-parent-kind-external-module">
-								<a href="fly.http.html">http</a>
-							</li>
-							<li class=" tsd-kind-external-module tsd-parent-kind-external-module">
-								<a href="fly.log.html">log</a>
-							</li>
-							<li class=" tsd-kind-external-module tsd-parent-kind-external-module">
-								<a href="fly.util.html">util</a>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module">
+								<a href="fly.fly-1.html">fly</a>
 							</li>
 						</ul>
 					</li>
@@ -244,13 +206,13 @@
 						<a href="../classes/fly.bodymixin.html" class="tsd-kind-icon">Body<wbr>Mixin</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/fly.cookiejar.html" class="tsd-kind-icon">Cookie<wbr>Jar</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/fly.document.html" class="tsd-kind-icon">Document</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/fly.element.html" class="tsd-kind-icon">Element</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/fly.flyheaders.html" class="tsd-kind-icon">Fly<wbr>Headers</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/fly.node.html" class="tsd-kind-icon">Node</a>
@@ -272,9 +234,6 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="fly.html#writablestream" class="tsd-kind-icon">Writable<wbr>Stream</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="fly.html#headers" class="tsd-kind-icon">Headers</a>
 					</li>
 				</ul>
 			</nav>
